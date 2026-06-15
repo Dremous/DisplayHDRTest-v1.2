@@ -1,0 +1,69 @@
+﻿2026-06-15T12:18:37.7601450Z ##[group]Run msbuild DisplayHDRComplianceTests.sln /p:Configuration=Debug /p:Platform=x64 /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143
+2026-06-15T12:18:37.7602665Z [36;1mmsbuild DisplayHDRComplianceTests.sln /p:Configuration=Debug /p:Platform=x64 /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143[0m
+2026-06-15T12:18:37.7716718Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-15T12:18:37.7717093Z env:
+2026-06-15T12:18:37.7717364Z   NUGET: C:\hostedtoolcache\windows\nuget.exe\7.6.0\x64/nuget.exe
+2026-06-15T12:18:37.7717696Z ##[endgroup]
+2026-06-15T12:18:46.3002261Z MSBuild version 18.6.3+84d3e95b4 for .NET Framework
+2026-06-15T12:18:47.9615918Z Build started 6/15/2026 12:18:47 PM.
+2026-06-15T12:18:47.9752494Z 
+2026-06-15T12:18:49.3547319Z Project "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" on node 1 (default targets).
+2026-06-15T12:18:49.3548132Z ValidateSolutionConfiguration:
+2026-06-15T12:18:49.3548466Z   Building solution configuration "Debug|x64".
+2026-06-15T12:18:50.7825239Z Project "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" (1) is building "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj" (2) on node 1 (default targets).
+2026-06-15T12:18:50.7826251Z PrepareForBuild:
+2026-06-15T12:18:50.7826502Z   Creating directory "DisplayH.FBA0D8AC\x64\Debug\".
+2026-06-15T12:18:50.8502298Z   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+2026-06-15T12:18:50.8504162Z   Creating directory "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\".
+2026-06-15T12:18:50.8509269Z   Creating directory "DisplayH.FBA0D8AC\x64\Debug\DisplayH.FBA0D8AC.tlog\".
+2026-06-15T12:18:50.8971367Z InitializeBuildStatus:
+2026-06-15T12:18:50.8972082Z   Creating "DisplayH.FBA0D8AC\x64\Debug\DisplayH.FBA0D8AC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+2026-06-15T12:18:50.8973760Z   Touching "DisplayH.FBA0D8AC\x64\Debug\DisplayH.FBA0D8AC.tlog\unsuccessfulbuild".
+2026-06-15T12:18:51.0735330Z FxExport:
+2026-06-15T12:18:51.0738074Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /D D2D_FUNCTION /D D2D_ENTRY=main /Od /Zi /Fl "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BackgroundNoiseEffect.fxlib" /T "lib_5_0" BackgroundNoiseEffect.hlsl 
+2026-06-15T12:18:52.4542365Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BackgroundNoiseEffect.fxlib
+2026-06-15T12:18:52.6212334Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /D D2D_FUNCTION /D D2D_ENTRY=main /Od /Zi /Fl "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\SineSweepEffect.fxlib" /T "lib_4_0_level_9_3_ps_only" SineSweepEffect.hlsl 
+2026-06-15T12:18:52.7126144Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\SineSweepEffect.fxlib
+2026-06-15T12:18:52.7228526Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /D D2D_FUNCTION /D D2D_ENTRY=main /Od /Zi /Fl "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\ToneSpikeEffect.fxlib" /T "lib_4_0_level_9_3_ps_only" ToneSpikeEffect.hlsl 
+2026-06-15T12:18:52.7735755Z   --- Compilation status for library function 'D2D_func_entry' ---
+2026-06-15T12:18:52.7848824Z D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\ToneSpikeEffect.hlsl(83,2): warning X4000: use of potentially uninitialized variable (profile) [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:52.7849816Z   
+2026-06-15T12:18:52.7850290Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\ToneSpikeEffect.fxlib
+2026-06-15T12:18:52.7903893Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /D D2D_FUNCTION /D D2D_ENTRY=main /Od /Zi /Fl "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BandedGradientEffect.fxlib" /T "lib_4_0_level_9_3_ps_only" BandedGradientEffect.hlsl 
+2026-06-15T12:18:52.8320700Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BandedGradientEffect.fxlib
+2026-06-15T12:18:52.8453613Z FxCompile:
+2026-06-15T12:18:52.8456214Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /E"main" /T ps_5_0 /D D2D_FULL_SHADER /D D2D_ENTRY=main /Fo "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BackgroundNoiseEffect.cso" /Od /Zi /setprivate "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BandedGradientEffect.fxlib" BackgroundNoiseEffect.hlsl 
+2026-06-15T12:18:52.8876360Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BackgroundNoiseEffect.cso
+2026-06-15T12:18:52.8990243Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /E"main" /T ps_4_0_level_9_3 /D D2D_FULL_SHADER /D D2D_ENTRY=main /Fo "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\SineSweepEffect.cso" /Od /Zi /setprivate "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BandedGradientEffect.fxlib" SineSweepEffect.hlsl 
+2026-06-15T12:18:52.9401717Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\SineSweepEffect.cso
+2026-06-15T12:18:52.9506312Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /E"main" /T ps_4_0_level_9_3 /D D2D_FULL_SHADER /D D2D_ENTRY=main /Fo "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\ToneSpikeEffect.cso" /Od /Zi /setprivate "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BandedGradientEffect.fxlib" ToneSpikeEffect.hlsl 
+2026-06-15T12:18:53.0005215Z D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\ToneSpikeEffect.hlsl(83,2): warning X4000: use of potentially uninitialized variable (profile) [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:53.0006834Z   
+2026-06-15T12:18:53.0011380Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\ToneSpikeEffect.cso
+2026-06-15T12:18:53.0120666Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /E"main" /T ps_4_0_level_9_3 /D D2D_FULL_SHADER /D D2D_ENTRY=main /Fo "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BandedGradientEffect.cso" /Od /Zi /setprivate "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BandedGradientEffect.fxlib" BandedGradientEffect.hlsl 
+2026-06-15T12:18:53.0534160Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Debug\BandedGradientEffect.cso
+2026-06-15T12:18:53.1337573Z ClCompile:
+2026-06-15T12:18:53.1339556Z   C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Yc"pch.h" /Fp"DisplayH.FBA0D8AC\x64\Debug\DisplayHDRComplianceTests.pch" /Fo"DisplayH.FBA0D8AC\x64\Debug\\" /Fd"DisplayH.FBA0D8AC\x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:queue pch.cpp
+2026-06-15T12:18:53.3403134Z   pch.cpp
+2026-06-15T12:18:54.3892983Z Attempting to cancel the build...
+2026-06-15T12:18:54.4246682Z Done Building Project "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" (default targets) -- FAILED.
+2026-06-15T12:18:55.6532525Z Done Building Project "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj" (default targets) -- FAILED.
+2026-06-15T12:18:55.6799044Z 
+2026-06-15T12:18:55.6799490Z Build FAILED.
+2026-06-15T12:18:55.6801281Z 
+2026-06-15T12:18:55.6802013Z "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" (default target) (1) ->
+2026-06-15T12:18:55.6803882Z "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj" (default target) (2) ->
+2026-06-15T12:18:55.6804571Z (FxExport target) -> 
+2026-06-15T12:18:55.6805541Z   D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\ToneSpikeEffect.hlsl(83,2): warning X4000: use of potentially uninitialized variable (profile) [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:55.6806468Z 
+2026-06-15T12:18:55.6806474Z 
+2026-06-15T12:18:55.6806795Z "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" (default target) (1) ->
+2026-06-15T12:18:55.6807550Z "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj" (default target) (2) ->
+2026-06-15T12:18:55.6808065Z (FxCompile target) -> 
+2026-06-15T12:18:55.6808966Z   D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\ToneSpikeEffect.hlsl(83,2): warning X4000: use of potentially uninitialized variable (profile) [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:55.6809832Z 
+2026-06-15T12:18:55.6809902Z     2 Warning(s)
+2026-06-15T12:18:55.6810077Z     0 Error(s)
+2026-06-15T12:18:55.6856167Z 
+2026-06-15T12:18:55.6856539Z Time Elapsed 00:00:07.72
+2026-06-15T12:18:56.3590411Z ##[error]The operation was canceled.

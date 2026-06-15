@@ -1,0 +1,6 @@
+﻿2026-06-15T12:18:38.1944351Z ##[group]Run microsoft/setup-msbuild@v2
+2026-06-15T12:18:38.1944732Z with:
+2026-06-15T12:18:38.1944954Z   msbuild-architecture: x86
+2026-06-15T12:18:38.1945186Z ##[endgroup]
+2026-06-15T12:18:38.3456467Z [command]C:\ProgramData\Chocolatey\bin\vswhere.exe -products * -requires Microsoft.Component.MSBuild -property installationPath -latest
+2026-06-15T12:18:38.7220047Z C:\Program Files\Microsoft Visual Studio\18\Enterprise

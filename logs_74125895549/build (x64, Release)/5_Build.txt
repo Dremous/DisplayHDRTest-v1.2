@@ -1,0 +1,79 @@
+﻿2026-06-15T12:18:37.3537746Z ##[group]Run msbuild DisplayHDRComplianceTests.sln /p:Configuration=Release /p:Platform=x64 /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143
+2026-06-15T12:18:37.3538940Z [36;1mmsbuild DisplayHDRComplianceTests.sln /p:Configuration=Release /p:Platform=x64 /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143[0m
+2026-06-15T12:18:37.3642441Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-15T12:18:37.3642790Z env:
+2026-06-15T12:18:37.3643049Z   NUGET: C:\hostedtoolcache\windows\nuget.exe\7.6.0\x64/nuget.exe
+2026-06-15T12:18:37.3643362Z ##[endgroup]
+2026-06-15T12:18:45.2726480Z MSBuild version 18.6.3+84d3e95b4 for .NET Framework
+2026-06-15T12:18:46.2693054Z Build started 6/15/2026 12:18:46 PM.
+2026-06-15T12:18:46.2739294Z 
+2026-06-15T12:18:47.0183649Z Project "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" on node 1 (default targets).
+2026-06-15T12:18:47.0184676Z ValidateSolutionConfiguration:
+2026-06-15T12:18:47.0185080Z   Building solution configuration "Release|x64".
+2026-06-15T12:18:47.6692124Z Project "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" (1) is building "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj" (2) on node 1 (default targets).
+2026-06-15T12:18:47.6693074Z PrepareForBuild:
+2026-06-15T12:18:47.6693336Z   Creating directory "DisplayH.FBA0D8AC\x64\Release\".
+2026-06-15T12:18:47.7126612Z   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+2026-06-15T12:18:47.7128551Z   Creating directory "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\".
+2026-06-15T12:18:47.7132589Z   Creating directory "DisplayH.FBA0D8AC\x64\Release\DisplayH.FBA0D8AC.tlog\".
+2026-06-15T12:18:47.7403808Z InitializeBuildStatus:
+2026-06-15T12:18:47.7404773Z   Creating "DisplayH.FBA0D8AC\x64\Release\DisplayH.FBA0D8AC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+2026-06-15T12:18:47.7406357Z   Touching "DisplayH.FBA0D8AC\x64\Release\DisplayH.FBA0D8AC.tlog\unsuccessfulbuild".
+2026-06-15T12:18:47.8964939Z FxExport:
+2026-06-15T12:18:47.8966902Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /D D2D_FUNCTION /D D2D_ENTRY=main /Fl "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BackgroundNoiseEffect.fxlib" /T "lib_5_0" BackgroundNoiseEffect.hlsl 
+2026-06-15T12:18:48.3898532Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BackgroundNoiseEffect.fxlib
+2026-06-15T12:18:48.4738371Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /D D2D_FUNCTION /D D2D_ENTRY=main /Fl "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\SineSweepEffect.fxlib" /T "lib_4_0_level_9_3_ps_only" SineSweepEffect.hlsl 
+2026-06-15T12:18:48.5194740Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\SineSweepEffect.fxlib
+2026-06-15T12:18:48.5286790Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /D D2D_FUNCTION /D D2D_ENTRY=main /Fl "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\ToneSpikeEffect.fxlib" /T "lib_4_0_level_9_3_ps_only" ToneSpikeEffect.hlsl 
+2026-06-15T12:18:48.5944881Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\ToneSpikeEffect.fxlib
+2026-06-15T12:18:48.6262367Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /D D2D_FUNCTION /D D2D_ENTRY=main /Fl "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BandedGradientEffect.fxlib" /T "lib_4_0_level_9_3_ps_only" BandedGradientEffect.hlsl 
+2026-06-15T12:18:48.6717202Z   --- Compilation status for library function 'D2D_func_entry' ---
+2026-06-15T12:18:48.6847111Z D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(32,6-19): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:48.6849488Z D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(70,6-16): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:48.6851473Z D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(32,6-19): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:48.6852538Z   
+2026-06-15T12:18:48.6852991Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BandedGradientEffect.fxlib
+2026-06-15T12:18:48.6941212Z FxCompile:
+2026-06-15T12:18:48.6943795Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /E"main" /T ps_5_0 /D D2D_FULL_SHADER /D D2D_ENTRY=main /Fo "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BackgroundNoiseEffect.cso" /setprivate "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BandedGradientEffect.fxlib" BackgroundNoiseEffect.hlsl 
+2026-06-15T12:18:48.7322722Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BackgroundNoiseEffect.cso
+2026-06-15T12:18:48.7416169Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /E"main" /T ps_4_0_level_9_3 /D D2D_FULL_SHADER /D D2D_ENTRY=main /Fo "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\SineSweepEffect.cso" /setprivate "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BandedGradientEffect.fxlib" SineSweepEffect.hlsl 
+2026-06-15T12:18:48.7832152Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\SineSweepEffect.cso
+2026-06-15T12:18:48.7929462Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /E"main" /T ps_4_0_level_9_3 /D D2D_FULL_SHADER /D D2D_ENTRY=main /Fo "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\ToneSpikeEffect.cso" /setprivate "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BandedGradientEffect.fxlib" ToneSpikeEffect.hlsl 
+2026-06-15T12:18:48.8624206Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\ToneSpikeEffect.cso
+2026-06-15T12:18:48.8723562Z   C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86\fxc.exe /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt" /I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\Include\um" /nologo /E"main" /T ps_4_0_level_9_3 /D D2D_FULL_SHADER /D D2D_ENTRY=main /Fo "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BandedGradientEffect.cso" /setprivate "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BandedGradientEffect.fxlib" BandedGradientEffect.hlsl 
+2026-06-15T12:18:48.9191476Z D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(32,6-19): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:48.9194745Z D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(70,6-16): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:48.9197769Z D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(32,6-19): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:48.9199478Z   
+2026-06-15T12:18:48.9200212Z   compilation object save succeeded; see D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\x64\Release\BandedGradientEffect.cso
+2026-06-15T12:18:48.9748155Z ClCompile:
+2026-06-15T12:18:48.9750356Z   C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX86\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Yc"pch.h" /Fp"DisplayH.FBA0D8AC\x64\Release\DisplayHDRComplianceTests.pch" /Fo"DisplayH.FBA0D8AC\x64\Release\\" /Fd"DisplayH.FBA0D8AC\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:queue pch.cpp
+2026-06-15T12:18:49.0938616Z   pch.cpp
+2026-06-15T12:18:54.3686374Z Attempting to cancel the build...
+2026-06-15T12:18:54.3803861Z Done Building Project "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" (default targets) -- FAILED.
+2026-06-15T12:18:57.2254204Z ClCompile:
+2026-06-15T12:18:57.2254710Z   Compiler terminating.  Please wait........... Abort complete.
+2026-06-15T12:18:57.2721036Z Done Building Project "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj" (default targets) -- FAILED.
+2026-06-15T12:18:57.2788739Z 
+2026-06-15T12:18:57.2789056Z Build FAILED.
+2026-06-15T12:18:57.2790894Z 
+2026-06-15T12:18:57.2791491Z "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" (default target) (1) ->
+2026-06-15T12:18:57.2793009Z "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj" (default target) (2) ->
+2026-06-15T12:18:57.2793595Z (FxExport target) -> 
+2026-06-15T12:18:57.2794617Z   D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(32,6-19): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:57.2797322Z   D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(70,6-16): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:57.2799222Z   D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(32,6-19): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:57.2800342Z 
+2026-06-15T12:18:57.2800349Z 
+2026-06-15T12:18:57.2800647Z "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.sln" (default target) (1) ->
+2026-06-15T12:18:57.2801313Z "D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj" (default target) (2) ->
+2026-06-15T12:18:57.2801768Z (FxCompile target) -> 
+2026-06-15T12:18:57.2802725Z   D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(32,6-19): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:57.2804422Z   D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(70,6-16): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:57.2806136Z   D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\BandedGradientEffect.hlsl(32,6-19): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them [D:\a\DisplayHDRTest-v1.2\DisplayHDRTest-v1.2\DisplayHDRComplianceTests.vcxproj]
+2026-06-15T12:18:57.2807070Z 
+2026-06-15T12:18:57.2807146Z     6 Warning(s)
+2026-06-15T12:18:57.2807319Z     0 Error(s)
+2026-06-15T12:18:57.2840540Z 
+2026-06-15T12:18:57.2841010Z Time Elapsed 00:00:11.02
+2026-06-15T12:18:57.5841319Z ##[error]The operation was canceled.

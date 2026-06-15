@@ -28,7 +28,7 @@ jobs:
     - name: Build
       working-directory: ${{ env.GITHUB_WORKSPACE }}
       run: |
-        msbuild DisplayHDRComplianceTests.sln /p:Configuration=${{ matrix.configuration }} /p:Platform=${{ matrix.platform }} /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143 "/p:AdditionalOptions=/utf-8 %(AdditionalOptions)"
+        msbuild DisplayHDRComplianceTests.sln /p:Configuration=${{ matrix.configuration }} /p:Platform=${{ matrix.platform }} /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4

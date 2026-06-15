@@ -1,0 +1,17 @@
+﻿2026-06-15T12:18:46.8132303Z ##[group]Run msbuild DisplayHDRComplianceTests.sln /p:Configuration=Release /p:Platform=x86 /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143
+2026-06-15T12:18:46.8133500Z [36;1mmsbuild DisplayHDRComplianceTests.sln /p:Configuration=Release /p:Platform=x86 /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143[0m
+2026-06-15T12:18:46.9023839Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-06-15T12:18:46.9024240Z env:
+2026-06-15T12:18:46.9024541Z   NUGET: C:\hostedtoolcache\windows\nuget.exe\7.6.0\x64/nuget.exe
+2026-06-15T12:18:46.9024882Z ##[endgroup]
+2026-06-15T12:18:53.9391103Z MSBuild version 18.6.3+84d3e95b4 for .NET Framework
+2026-06-15T12:18:55.4874712Z Build started 6/15/2026 12:18:55 PM.
+2026-06-15T12:18:55.4936712Z 
+2026-06-15T12:18:55.6044240Z Attempting to cancel the build...
+2026-06-15T12:18:55.8818759Z 
+2026-06-15T12:18:55.8819831Z Build FAILED.
+2026-06-15T12:18:55.8820107Z     0 Warning(s)
+2026-06-15T12:18:55.8900551Z     0 Error(s)
+2026-06-15T12:18:55.9071772Z 
+2026-06-15T12:18:55.9072162Z Time Elapsed 00:00:00.46
+2026-06-15T12:18:56.6968890Z ##[error]The operation was canceled.
