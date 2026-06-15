@@ -929,10 +929,10 @@ void Game::GenerateTestPattern_ConnectionProperties(ID2D1DeviceContext2* ctx)
 	case DisplayMonitorConnectionKind::Wired:
 		text << "有线 ";
 		break;
-	case DisplayMonitorConnectionKind::无线:
+	case DisplayMonitorConnectionKind::Wireless:
 		text << "无线";
 		break;
-	case DisplayMonitorConnectionKind::虚拟:
+	case DisplayMonitorConnectionKind::Virtual:
 		text << "虚拟";
 		break;
 	default:
@@ -1254,11 +1254,11 @@ void Game::GenerateTestPattern_ResetInstructions(ID2D1DeviceContext2* ctx)
     std::wstringstream text;
     text << L"对于外接显示器，请使用其 OSD 菜单将所有设置重置为默认或出厂状态。\n\n";
 
-	text << L"请在前一屏幕中将操作系统"亮度"滑块设置为系数 1.0。\n";
-	text << L"将"SDR 色彩外观"滑块移至最左侧位置。\n";
+	text << L"请在前一屏幕中将操作系统\"亮度\"滑块设置为系数 1.0。\n";
+	text << L"将\"SDR 色彩外观\"滑块移至最左侧位置。\n";
 	text << L"应用启动后请勿更改亮度滑块。\n\n";
 
-	text << L"请确保"夜间模式"设置已关闭。\n";
+	text << L"请确保\"夜间模式\"设置已关闭。\n";
 
 	text << L"请禁用任何环境光传感器或自适应色彩功能。\n\n";
 
