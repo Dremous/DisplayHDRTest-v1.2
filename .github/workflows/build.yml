@@ -30,14 +30,32 @@ jobs:
       run: |
         msbuild DisplayHDRComplianceTests.sln /p:Configuration=${{ matrix.configuration }} /p:Platform=${{ matrix.platform }} /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143
 
-    - name: Upload artifacts
+    - name: Find build outputs
+      id: find
+      shell: pwsh
+      run: |
+        $exe = Get-ChildItem -Recurse -Filter "DisplayHDRComplianceTests.exe" | Select-Object -First 1
+        if ($exe) {
+          Write-Host "Found exe: $($exe.FullName)"
+          "EXE_PATH=$($exe.FullName)" >> $env:GITHUB_OUTPUT
+          "EXE_DIR=$($exe.DirectoryName)" >> $env:GITHUB_OUTPUT
+        } else {
+          Write-Host "No exe found"
+        }
+        $cso = Get-ChildItem -Recurse -Filter "*.cso"
+        Write-Host "Found $($cso.Count) .cso files"
+
+    - name: Upload exe
+      if: steps.find.outputs.EXE_PATH != ''
       uses: actions/upload-artifact@v4
       with:
         name: DisplayHDRTest-${{ matrix.platform }}-${{ matrix.configuration }}
-        path: |
-          **/${{ matrix.configuration }}/${{ matrix.platform }}/DisplayHDRComplianceTests.exe
-          **/${{ matrix.configuration }}/Win32/DisplayHDRComplianceTests.exe
-          **/${{ matrix.configuration }}/${{ matrix.platform }}/*.cso
-          **/${{ matrix.configuration }}/Win32/*.cso
-          *.png
+        path: ${{ steps.find.outputs.EXE_PATH }}
+        if-no-files-found: warn
+
+    - name: Upload cso shaders
+      uses: actions/upload-artifact@v4
+      with:
+        name: shaders-${{ matrix.platform }}-${{ matrix.configuration }}
+        path: ${{ steps.find.outputs.EXE_DIR }}/*.cso
         if-no-files-found: warn
