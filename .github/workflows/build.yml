@@ -1,0 +1,41 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        platform: [x64, Win32]
+        configuration: [Release, Debug]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+
+    - name: Build
+      working-directory: ${{ env.GITHUB_WORKSPACE }}
+      run: |
+        msbuild DisplayHDRComplianceTests.sln /p:Configuration=${{ matrix.configuration }} /p:Platform=${{ matrix.platform }} /p:WindowsTargetPlatformVersion=10.0.22000.0 /p:PlatformToolset=v143
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: DisplayHDRTest-${{ matrix.platform }}-${{ matrix.configuration }}
+        path: |
+          **/${{ matrix.configuration }}/${{ matrix.platform }}/DisplayHDRComplianceTests.exe
+          **/${{ matrix.configuration }}/${{ matrix.platform }}/*.cso
+          *.png
+        if-no-files-found: warn

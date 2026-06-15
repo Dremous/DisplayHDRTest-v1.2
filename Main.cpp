@@ -28,7 +28,7 @@ SYSTEMTIME GetExpiryTime();
 LONG g_wndStyle = WS_OVERLAPPEDWINDOW;
 RECT g_wndRect = {};
 bool g_fullscreen = false;
-const PWSTR g_appTitle = L"VESA DisplayHDR Compliance Tests";
+const PWSTR g_appTitle = L"VESA DisplayHDR 合规性测试";
 
 // Indicates to hybrid graphics systems to prefer the discrete part by default
 extern "C"
@@ -104,7 +104,7 @@ int WINAPI wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, 
 
         std::wstringstream msg;
 
-        msg << L"This prerelease version is only valid until: ";
+        msg << L"此预发布版本有效期至：";
 
         WCHAR dateStr[255];
         int ignored = GetDateFormatEx(
@@ -120,7 +120,7 @@ int WINAPI wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, 
 #if 0    // disable time bomb
         if (CheckTimeBombExpired())
         {
-            MessageBoxEx(hwnd, msg.str().c_str(), L"Windows HDR display color performance", MB_OK, 0);
+            MessageBoxEx(hwnd, msg.str().c_str(), L"Windows HDR 显示色彩性能", MB_OK, 0);
             return 0;
         }
 #endif
@@ -133,9 +133,9 @@ int WINAPI wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, 
 
         g_game->Initialize(hwnd, rc.right - rc.left, rc.bottom - rc.top);
 
-        // TODO: When debugging it can be useful to comment this out and start in windowed mode.
-        // After the window is created, set to fullscreen windowed. Don't do this at window
-        // creation time so we have the default window state and RECT to restore to.
+        // TODO: 调试时可注释此句，以窗口模式启动。
+        // 创建窗口后设置为全屏窗口。不要在窗口创建时做此操作，
+        // 以便保留默认窗口状态和RECT以便恢复。
 #ifndef _DEBUG
         ToggleFullscreen(hwnd);
 #endif
