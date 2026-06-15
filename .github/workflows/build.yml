@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        platform: [x64, Win32]
+        platform: [x64, x86]
         configuration: [Release, Debug]
 
     steps:
@@ -28,7 +28,7 @@ jobs:
     - name: Build
       working-directory: ${{ env.GITHUB_WORKSPACE }}
       run: |
-        msbuild DisplayHDRComplianceTests.sln /p:Configuration=${{ matrix.configuration }} /p:Platform=${{ matrix.platform }} /p:WindowsTargetPlatformVersion=10.0.22000.0 /p:PlatformToolset=v143
+        msbuild DisplayHDRComplianceTests.sln /p:Configuration=${{ matrix.configuration }} /p:Platform=${{ matrix.platform }} /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
@@ -36,6 +36,8 @@ jobs:
         name: DisplayHDRTest-${{ matrix.platform }}-${{ matrix.configuration }}
         path: |
           **/${{ matrix.configuration }}/${{ matrix.platform }}/DisplayHDRComplianceTests.exe
+          **/${{ matrix.configuration }}/Win32/DisplayHDRComplianceTests.exe
           **/${{ matrix.configuration }}/${{ matrix.platform }}/*.cso
+          **/${{ matrix.configuration }}/Win32/*.cso
           *.png
         if-no-files-found: warn
