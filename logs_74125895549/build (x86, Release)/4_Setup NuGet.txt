@@ -1,5 +1,0 @@
-﻿2026-06-15T12:18:46.3834554Z ##[group]Run NuGet/setup-nuget@v2
-2026-06-15T12:18:46.3834964Z with:
-2026-06-15T12:18:46.3835211Z   nuget-version: latest
-2026-06-15T12:18:46.3836171Z ##[endgroup]
-2026-06-15T12:18:46.7836618Z Installed nuget.exe version 7.6.0

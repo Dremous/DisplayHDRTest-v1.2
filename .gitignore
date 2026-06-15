@@ -36,3 +36,6 @@
 /SineSweepEffect.cso
 /BandedGradientEffect.cso
 /BackgroundNoiseEffect.cso
+
+# CI build logs
+/logs_*
